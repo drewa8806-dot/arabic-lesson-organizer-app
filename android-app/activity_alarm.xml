@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/alarm_background"
+    android:padding="24dp">
+
+    <!-- أيقونة الجرس -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔔"
+        android:textSize="120sp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- عنوان -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تذكير بالدرس!"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp" />
+
+    <!-- بطاقة البيانات -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:padding="24dp"
+        android:layout_marginBottom="32dp">
+
+        <!-- اسم الدرس -->
+        <TextView
+            android:id="@+id/lessonNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رياضيات"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- التاريخ والوقت -->
+        <TextView
+            android:id="@+id/lessonTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الخميس 3:00 مساءً"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- سؤال التأكيد -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="هل فهمت؟"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#7C4DFF"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <!-- زر الإغلاق -->
+    <Button
+        android:id="@+id/dismissButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✅ فهمت، شكراً!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:padding="16dp" />
+
+</LinearLayout>
