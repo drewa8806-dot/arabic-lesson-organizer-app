@@ -1,0 +1,35 @@
+{
+  "name": "فكرني - لن أنسى أبداً",
+  "short_name": "فكرني",
+  "description": "تطبيق ذكي لتذكيرك بدروسك ومواعيدك - لن تنسى أبداً!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait-primary",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "إضافة درس جديد",
+      "short_name": "درس جديد",
+      "description": "إضافة درس جديد بسرعة",
+      "url": "/?action=add",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
